@@ -39,7 +39,7 @@ public class ChefHelper extends Application {
 		Scene scene = new Scene(pane, 500, 800);
 		primaryStage.setScene(scene);
 
-		
+		TemporaryUtil.saveNewMenu(menuDao);
 		menu = menuDao.loadMenu();
 		
 		ListView<Order> listView = new ListView<>(OrderListManager.mainOrderList);
